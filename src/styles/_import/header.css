@@ -1,0 +1,11 @@
+.l-header {
+  position: relative;
+
+  @media (width > 1200px) {
+    display: flex;
+  }
+
+  &.is-fixed {
+    position: fixed;
+  }
+}

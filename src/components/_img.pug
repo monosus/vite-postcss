@@ -1,0 +1,11 @@
+mixin img
+  -
+    const source = attributes.src;
+    const root = _nodePath.resolve('./');
+    const imgPath = _nodePath.join(root, source);
+
+  if (_nodeFs.existsSync(imgPath))
+    - const size = _sizeOf(imgPath);
+    img(width=size.width height=size.height decoding="async" loading="lazy")&attributes(attributes)
+  else
+    img&attributes(attributes)

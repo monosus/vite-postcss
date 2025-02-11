@@ -1,0 +1,44 @@
+include /src/components/_img
+block variables
+
+doctype html
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content=('width=device-width,initial-scale=1.0,minimum-scale=1.0'))
+    meta(name='format-detection' content='telephone=no')
+
+    title= (meta.title || '')
+    meta(name='keyword', content=(meta.keyword || ''))
+    meta(name='description', content=(meta.description || ''))
+    meta(property='og:title' content=(meta.title || ''))
+    meta(property='og:description' content=(meta.description || ''))
+    meta(property='og:image' content=(meta.image || ''))
+    meta(property='og:url' content=(meta.url || ''))
+    meta(property='og:type' content='website')
+
+    //- CSS
+    block css
+      link(rel="stylesheet" href="/src/styles/layers.css")
+      link(rel="stylesheet" href="/src/styles/reset.css")
+      link(rel="stylesheet" href="/src/styles/token.css")
+      link(rel="stylesheet" href="/src/styles/base.css")
+      link(rel="stylesheet" href="/src/styles/components.css")
+
+  body(id=(bodyId || null ) )
+    .wrapper
+      //- Header
+      include /src/components/_header
+
+      //- block content
+      main
+        block content
+
+      //- Footer
+      include /src/components/_footer
+
+    block modal
+
+    //- JS
+    block scripts
+      script(src="/src/scripts/main.ts" type="module")

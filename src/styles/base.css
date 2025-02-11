@@ -1,0 +1,22 @@
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+  }
+
+  a {
+    color: var(--color-black);
+    text-decoration: none;
+  }
+}

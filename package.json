@@ -1,0 +1,46 @@
+{
+  "name": "vite-starter",
+  "version": "1.0.0",
+  "main": "src/scripts/main.ts",
+  "type": "module",
+  "author": "MonoThai",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "bun ./lint-tools/linting.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@ls-lint/ls-lint": "^2.2.3",
+    "@markuplint/jsx-parser": "^4.7.13",
+    "@markuplint/react-spec": "^4.5.13",
+    "@types/bun": "^1.1.14",
+    "@vituum/vite-plugin-pug": "^1.1.0",
+    "autoprefixer": "^10.4.20",
+    "cspell": "^8.16.1",
+    "image-size": "^1.1.1",
+    "lefthook": "^1.8.4",
+    "markuplint": "^4.11.3",
+    "postcss-calc": "^10.0.2",
+    "postcss-preset-env": "^10.1.3",
+    "postcss-reporter": "^7.1.0",
+    "prettier": "^3.4.2",
+    "sharp": "^0.33.5",
+    "stylelint": "^16.14.1",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "stylelint-config-standard": "^37.0.0",
+    "svgo": "^3.3.2",
+    "vite": "^6.1.0",
+    "vite-plugin-beautify": "^1.0.0",
+    "vite-plugin-image-optimizer": "^1.1.8",
+    "vituum": "^1.1.1"
+  },
+  "dependencies": {
+    "destyle.css": "^4.0.1"
+  }
+}
