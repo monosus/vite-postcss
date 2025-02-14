@@ -55,9 +55,9 @@ export default defineConfig({
       },
     }),
     ViteImageOptimizer({
-      png: { quality: 75 },
-      jpeg: { quality: 75 },
-      jpg: { quality: 75 },
+      png: { quality: 80 },
+      jpeg: { quality: 80 },
+      jpg: { quality: 80 },
     }),
     beautify({
       inDir: './dist',
