@@ -42,9 +42,13 @@ export default defineConfig({
   },
   plugins: [
     vituum({
-      input: ['./src/styles/**/*.{css,scss}', './src/scripts/main.{js,ts}'],
+      input: ['./src/styles/*.{css,scss}', './src/scripts/main.{js,ts}'],
       imports: {
-        paths: [],
+        // filenamePattern: {
+        //   'index.css': 'src/styles',
+        //   '+.css': 'src/null',
+        // },
+        paths: ['./src/styles/*/**'],
       },
     }),
     pug({
