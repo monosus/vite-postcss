@@ -1,13 +1,15 @@
 {
-	"extends": ["stylelint-config-standard", "stylelint-config-idiomatic-order"],
-	"rules": {
-		"order/order": ["custom-properties", "declarations"],
-		"declaration-block-no-duplicate-properties": true,
-		"at-rule-no-unknown": [
-			true,
-			{ "ignoreAtRules": ["extend", "starting-style"] }
-		],
-		"import-notation": "string"
-	},
-	"ignoreFiles": ["../node_modules/**/*", "../dist/**/*", "../src/styles/reset.css"]
+  "extends": ["stylelint-config-standard", "stylelint-config-idiomatic-order"],
+  "rules": {
+    "order/order": ["custom-properties", "declarations"],
+    "declaration-block-no-duplicate-properties": true,
+    "at-rule-no-unknown": [true, { "ignoreAtRules": ["extend", "starting-style"] }],
+    "import-notation": "string"
+  },
+  "ignoreFiles": [
+    "../node_modules/**/*",
+    "../dist/**/*",
+    "../src/styles/reset.css",
+    "../src/styles/variables/breakpoint.css"
+  ]
 }

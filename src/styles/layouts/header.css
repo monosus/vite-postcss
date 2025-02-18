@@ -1,8 +1,11 @@
+@import "../variables";
+
 .l-header {
   position: relative;
+  font-size: 100px;
 
-  @media (width > 1200px) {
-    display: flex;
+  @media (--sm) {
+    font-size: 50px;
   }
 
   &.is-fixed {

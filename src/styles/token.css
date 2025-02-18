@@ -1,8 +1,0 @@
-@layer tokens {
-  :root {
-    --font-family-base: "Noto Sans JP", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
-    --font-size-base: 1rem;
-    --color-black: #333;
-    --color-white: #fff;
-  }
-}
