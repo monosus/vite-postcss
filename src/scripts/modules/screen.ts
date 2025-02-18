@@ -8,7 +8,9 @@ export const isMdGt = () => window.matchMedia(`(min-width: ${breakpointMd + 1}px
 
 const isIOS = (): boolean => {
   return (
-    ['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'].includes(navigator.platform) ||
+    ['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'].includes(
+      navigator.platform,
+    ) ||
     (navigator.userAgent.includes('Mac') && 'ontouchend' in document)
   );
 };
@@ -37,7 +39,7 @@ export function screenLock(): void {
 
 export function screenUnlock(): void {
   if (isIOS() || isMacSafari()) {
-    const top = parseInt(document.documentElement.dataset.top || '0', 10);
+    const top = Number.parseInt(document.documentElement.dataset.top || '0', 10);
 
     document.documentElement.setAttribute('data-screen-locked', 'false');
     document.documentElement.style.top = '';

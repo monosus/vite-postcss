@@ -44,10 +44,10 @@ export default defineConfig({
     vituum({
       input: ['./src/styles/*.{css,scss}', './src/scripts/main.{js,ts}'],
       imports: {
-        // filenamePattern: {
-        //   'index.css': 'src/styles',
-        //   '+.css': 'src/null',
-        // },
+        filenamePattern: {
+          '+.css': [],
+          'index.css': 'src/styles',
+        },
         paths: ['./src/styles/*/**'],
       },
     }),
