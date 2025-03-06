@@ -8,9 +8,7 @@ export const isMdGt = () => window.matchMedia(`(min-width: ${breakpointMd + 1}px
 
 const isIOS = (): boolean => {
   return (
-    ['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'].includes(
-      navigator.platform,
-    ) ||
+    ['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'].includes(navigator.platform) ||
     (navigator.userAgent.includes('Mac') && 'ontouchend' in document)
   );
 };
@@ -32,8 +30,8 @@ export function screenLock(): void {
     document.documentElement.style.top = `-${top}px`;
     document.documentElement.dataset.top = top.toString();
   } else {
-    document.documentElement.style.overflowY = 'scroll';
-    document.body.style.overflowY = 'hidden';
+    document.documentElement.style.overflowY = 'hidden';
+    document.body.style.overflowY = 'scroll';
   }
 }
 
