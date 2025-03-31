@@ -1,18 +1,26 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-idiomatic-order"],
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
   "rules": {
     "order/order": ["custom-properties", "declarations"],
     "declaration-block-no-duplicate-properties": true,
-    "at-rule-no-unknown": [true, { "ignoreAtRules": ["extend", "starting-style"] }],
     "import-notation": "string",
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["custom-media", "mixin", "extend"]
+      }
+    ],
     "at-rule-empty-line-before": [
       "always",
       {
-        "except": ["after-same-name", "first-nested"],
+        "except": ["blockless-after-same-name-blockless", "after-same-name", "first-nested"],
         "ignore": ["after-comment"]
       }
-    ],
-    "rule-empty-line-before": null
+    ]
   },
-  "ignoreFiles": ["../node_modules/**/*", "../dist/**/*", "../src/styles/reset.css"]
+  "ignoreFiles": [
+    "../node_modules/**/*",
+    "../dist/**/*",
+    "../src/styles/common/reset.css"
+  ]
 }

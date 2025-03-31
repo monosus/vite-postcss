@@ -4,23 +4,8 @@
   // language - current active spelling language
   "language": "en",
   // words - list of words to be always considered correct
-  "words": [
-    "optimizelegibility",
-    "Avenir",
-    "xlink",
-    "hx",
-    "iconify",
-    "preinstall",
-    "lefthook",
-    "vuex",
-    "Vetur",
-    "htdocs",
-    "hono",
-    "hoge",
-    "fuga",
-    "Kaku",
-  ],
-  "ignoreWords": ["webfontloader", "Noto", "destyle"],
+  "words": ["optimizelegibility", "Avenir", "xlink", "hx", "iconify", "preinstall", "lefthook", "pxtorem"],
+  "ignoreWords": ["Kaku", "Noto", "destyle"],
   "ignorePaths": ["../src/images/**/*"],
   // flagWords - list of words to be always considered incorrect
   // This is useful for offensive words and common spelling errors.

@@ -1,0 +1,4 @@
+@custom-media --sm-lte (max-width: 787px);
+@custom-media --sm-gt (min-width: 768px);
+@custom-media --md-lte (max-width: 991px);
+@custom-media --md-gt (min-width: 992px);

@@ -1,0 +1,7 @@
+.header {
+  position: relative;
+
+  @media (--sm-lte) {
+    position: fixed;
+  }
+}

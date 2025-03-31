@@ -5,17 +5,26 @@
     box-sizing: border-box;
   }
 
+  html {
+    &[data-screen-locked="true"] {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
   body {
-    background-color: var(--color-white);
-    color: var(--color-black);
     font-family: var(--font-family-base);
     font-size: var(--font-size-base);
-    -webkit-font-smoothing: antialiased;
     line-height: 1.5;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
     text-size-adjust: 100%;
   }
 
-  a {
+  :where(a) {
     color: var(--color-black);
     text-decoration: none;
   }

@@ -1,5 +1,5 @@
-@layer pages {
-  .sec-top {
+@layer layout {
+  .sec-cmn {
     position: relative;
   }
 }

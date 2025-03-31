@@ -18,15 +18,16 @@ html(lang='ja')
     meta(property='og:type' content='website')
 
     //- CSS
+    style @layer reset,tokens,base,layouts,components,pages;
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="/src/styles/common/reset.css")
+    link(rel="stylesheet" href="/src/styles/common/tokens.css")
+    link(rel="stylesheet" href="/src/styles/common/base.css")
+    link(rel="stylesheet" href="/src/styles/common/layouts.css")
+    link(rel="stylesheet" href="/src/styles/common/components.css")
     block css
-      link(rel="stylesheet" href="/src/styles/layers.css")
-      link(rel="stylesheet" href="/src/styles/reset.css")
-      link(rel="stylesheet" href="/src/styles/tokens.css")
-      link(rel="stylesheet" href="/src/styles/base.css")
-      link(rel="stylesheet" href="/src/styles/layouts.css")
-      link(rel="stylesheet" href="/src/styles/components.css")
-      link(rel="stylesheet" href="/src/styles/contents.css")
-      link(rel="stylesheet" href="/src/styles/pages.css")
 
   body(id=(bodyId || null ) )
     .wrapper
@@ -43,5 +44,5 @@ html(lang='ja')
     block modal
 
     //- JS
+    script(src="/src/scripts/main.ts" type="module")
     block scripts
-      script(src="/src/scripts/main.ts" type="module")
