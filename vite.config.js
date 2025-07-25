@@ -64,9 +64,9 @@ export default defineConfig(({ mode }) => {
       }),
       ViteImageOptimizer({
         includePublic: true,
-        png: { quality: process.env.VITE_CONFIG_IMAGE_QUALITY },
-        jpeg: { quality: process.env.VITE_CONFIG_IMAGE_QUALITY },
-        jpg: { quality: process.env.VITE_CONFIG_IMAGE_QUALITY },
+        png: { quality: Number(process.env.VITE_CONFIG_IMAGE_QUALITY) },
+        jpeg: { quality: Number(process.env.VITE_CONFIG_IMAGE_QUALITY) },
+        jpg: { quality: Number(process.env.VITE_CONFIG_IMAGE_QUALITY) },
       }),
       beautify({
         inDir: './dist',
