@@ -78,7 +78,7 @@ export default defineConfig(({ mode }) => {
             indent_size: process.env.VITE_CONFIG_INDENT,
             indent_with_tabs: process.env.VITE_CONFIG_INDENT_WITH_TABS,
             content_unformatted: ['pre', 'textarea', 'script'],
-            inline: [],
+            inline: ['br'],
           },
         },
         css: {
