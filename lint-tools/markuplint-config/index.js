@@ -3,7 +3,7 @@ export default {
 		{
 			selector: "script[src^='https://']",
 			rules: {
-				'required-attr': "外部スクリプトは使用しません。",
+				'required-attr': "External scripts are not allowed.",
 			},
 		},
 	],

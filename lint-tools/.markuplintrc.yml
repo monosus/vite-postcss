@@ -1,12 +1,10 @@
-specs:
-  \.[jt]sx?$: "@markuplint/react-spec"
 parser:
-  \.[jt]sx?$: "@markuplint/jsx-parser"
+  \.pug$: "@markuplint/pug-parser"
 extends:
   - "./markuplint-config/index.js"
   - "markuplint:recommended"
 # nodeRules:
 #   - selector: "script[src^='https://']"
 #     rules:
-#       required-attr: "外部リソースを読み込むのはNGです"
+#       required-attr: "Loading external resources is not allowed."
 
